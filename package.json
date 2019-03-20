@@ -1,0 +1,47 @@
+{
+  "name": "tstests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand --forceExit"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": false
+      }
+    },
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      ".coffee$": "<rootDir>/node_modules/jest-coffee-preprocessor/index.js",
+      ".(ts|tsx)$": "ts-jest"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/services/*.ts",
+      "src/routes/*.ts"
+    ],
+    "moduleFileExtensions": [
+      "json",
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "coffee",
+      "node"
+    ],
+    "transformIgnorePatterns": [],
+    "cache": false
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "jest-coffee-preprocessor": "^1.0.0",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.4000"
+  }
+}

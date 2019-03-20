@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand --forceExit"
+    "test": "NODE_ENV=test TEST_TYPE=integration jest --runInBand --forceExit"
   },
   "jest": {
     "globals": {
@@ -14,6 +14,8 @@
     },
     "preset": "ts-jest",
     "testEnvironment": "node",
+    "globalSetup": "<rootDir>/tests/setup.js",
+    "globalTeardown": "<rootDir>/tests/teardown.js",
     "transform": {
       ".coffee$": "<rootDir>/node_modules/jest-coffee-preprocessor/index.js",
       ".(ts|tsx)$": "ts-jest"
@@ -38,10 +40,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/express": "4.16.1",
     "@types/jest": "^24.0.11",
+    "@types/supertest": "2.0.7",
+    "coffee-script": "1.12.7",
+    "express": "4.16.4",
     "jest": "^24.5.0",
     "jest-coffee-preprocessor": "^1.0.0",
+    "supertest": "4.0.0",
     "ts-jest": "^24.0.0",
-    "typescript": "^3.3.4000"
+    "typescript": "3.3.3"
   }
 }

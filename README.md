@@ -2,6 +2,9 @@
 
 Minimal repo to show how adding coffeescript register messes up with sourcemaps
 
+For jest + ts-jest + coffeescript, line numbers used are the javascript ones
+For mocha + ts-node/register + coffeescript, line numbers match 
+
 ## Getting started
 
 Using npm

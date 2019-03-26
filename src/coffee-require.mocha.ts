@@ -1,16 +1,18 @@
 import "coffee-script/register";
+import * as chai from "chai"
+const expect = chai.expect;
 
 describe('test', () => {
 
   describe('Uses coffee-script register', () => {
 
       it('should pass', () => {
-        expect(true).toBe(true);
+        expect(true).to.equal(true);
       });
 
-      it('should not pass on line 13', () => {
+      it('should not pass. Error on line 15', () => {
         // extra line
-        expect(true).toBe(false);
+        expect(true).to.equal(false);
       });
 
   });

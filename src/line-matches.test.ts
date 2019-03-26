@@ -6,7 +6,7 @@ describe('test', () => {
         expect(true).toBe(true);
       });
 
-      it('should not pass', () => {
+      it('should not pass. Fails on line 11', () => {
         // extra line
         expect(true).toBe(false);
       });

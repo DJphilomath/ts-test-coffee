@@ -1,31 +1,12 @@
 {
   "name": "tstests",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test TEST_TYPE=integration jest --runInBand --forceExit"
+    "test": "jest --runInBand"
   },
   "jest": {
-    "runner": "jest-runner-tsc",
-    "globals": {
-      "ts-jest": {
-        "tsConfig": false
-      }
-    },
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "globalSetup": "<rootDir>/tests/setup.js",
-    "globalTeardown": "<rootDir>/tests/teardown.js",
-    "transform": {
-      ".coffee$": "<rootDir>/node_modules/jest-coffee-preprocessor/index.js",
-      ".(ts|tsx)$": "ts-jest"
-    },
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/services/*.ts",
-      "src/routes/*.ts"
-    ],
+    "cache": false,
     "moduleFileExtensions": [
       "json",
       "ts",
@@ -35,11 +16,12 @@
       "coffee",
       "node"
     ],
-    "transformIgnorePatterns": [],
-    "cache": false
+    "preset": "ts-jest",
+    "transform": {
+      ".coffee$": "<rootDir>/node_modules/jest-coffee-preprocessor/index.js",
+      ".(ts|tsx)$": "ts-jest"
+    }
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@types/express": "4.16.1",
     "@types/jest": "^24.0.11",

@@ -124,6 +124,12 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@danielkalen/source-map-support@^0.4.16":
+  version "0.4.16"
+  resolved "http://npm.ooapi.com:4873/@danielkalen%2fsource-map-support/-/source-map-support-0.4.16.tgz#9b19b25acb9a2a89c724d96e5a7837415c04c894"
+  dependencies:
+    source-map "^0.5.6"
+
 "@jest/console@^24.3.0":
   version "24.3.0"
   resolved "http://npm.ooapi.com:4873/@jest%2fconsole/-/console-24.3.0.tgz#7bd920d250988ba0bf1352c4493a48e1cb97671e"
@@ -685,6 +691,10 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
+charenc@~0.0.1:
+  version "0.0.2"
+  resolved "http://npm.ooapi.com:4873/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
+
 ci-info@^2.0.0:
   version "2.0.0"
   resolved "http://npm.ooapi.com:4873/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
@@ -714,7 +724,16 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "http://npm.ooapi.com:4873/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-coffee-script@1.12.7, coffee-script@^1.12.6:
+coffee-register@1:
+  version "1.0.0"
+  resolved "http://npm.ooapi.com:4873/coffee-register/-/coffee-register-1.0.0.tgz#90bdf389e48352a7e768b44e64d2db296705db9a"
+  dependencies:
+    "@danielkalen/source-map-support" "^0.4.16"
+    coffee-script "^1.12.5"
+    fs-jetpack "^0.13.3"
+    md5 "^2.2.1"
+
+coffee-script@1.12.7, coffee-script@^1.12.5, coffee-script@^1.12.6:
   version "1.12.7"
   resolved "http://npm.ooapi.com:4873/coffee-script/-/coffee-script-1.12.7.tgz#c05dae0cb79591d05b3070a8433a98c9a89ccc53"
 
@@ -791,6 +810,13 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "http://npm.ooapi.com:4873/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
+create-jest-runner@^0.4.0:
+  version "0.4.1"
+  resolved "http://npm.ooapi.com:4873/create-jest-runner/-/create-jest-runner-0.4.1.tgz#eeda15bc0f9dc622ef2de5a7fd9a0f1a2c2eb62d"
+  dependencies:
+    jest-worker "^23.2.0"
+    throat "^4.1.0"
+
 cross-spawn@^6.0.0:
   version "6.0.5"
   resolved "http://npm.ooapi.com:4873/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
@@ -800,6 +826,10 @@ cross-spawn@^6.0.0:
     semver "^5.5.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
+
+crypt@~0.0.1:
+  version "0.0.2"
+  resolved "http://npm.ooapi.com:4873/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
 
 cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   version "0.3.6"
@@ -1193,6 +1223,12 @@ fresh@0.5.2:
   version "0.5.2"
   resolved "http://npm.ooapi.com:4873/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
 
+fs-jetpack@^0.13.3:
+  version "0.13.3"
+  resolved "http://npm.ooapi.com:4873/fs-jetpack/-/fs-jetpack-0.13.3.tgz#9e6c47118f0bb3d880cc88f9f8a7d25863f4fb15"
+  dependencies:
+    minimatch "^3.0.2"
+
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "http://npm.ooapi.com:4873/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
@@ -1397,7 +1433,7 @@ is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "http://npm.ooapi.com:4873/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
 
-is-buffer@^1.1.5:
+is-buffer@^1.1.5, is-buffer@~1.1.1:
   version "1.1.6"
   resolved "http://npm.ooapi.com:4873/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
 
@@ -1791,6 +1827,13 @@ jest-resolve@^24.5.0:
     jest-pnp-resolver "^1.2.1"
     realpath-native "^1.1.0"
 
+jest-runner-tsc@~1.3.0:
+  version "1.3.2"
+  resolved "http://npm.ooapi.com:4873/jest-runner-tsc/-/jest-runner-tsc-1.3.2.tgz#63ec4ee79de05b27df3cc7d480002498e677b505"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    create-jest-runner "^0.4.0"
+
 jest-runner@^24.5.0:
   version "24.5.0"
   resolved "http://npm.ooapi.com:4873/jest-runner/-/jest-runner-24.5.0.tgz#9be26ece4fd4ab3dfb528b887523144b7c5ffca8"
@@ -1905,6 +1948,12 @@ jest-watcher@^24.5.0:
     chalk "^2.0.1"
     jest-util "^24.5.0"
     string-length "^2.0.0"
+
+jest-worker@^23.2.0:
+  version "23.2.0"
+  resolved "http://npm.ooapi.com:4873/jest-worker/-/jest-worker-23.2.0.tgz#faf706a8da36fae60eb26957257fa7b5d8ea02b9"
+  dependencies:
+    merge-stream "^1.0.1"
 
 jest-worker@^24.4.0:
   version "24.4.0"
@@ -2110,6 +2159,14 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+md5@^2.2.1:
+  version "2.2.1"
+  resolved "http://npm.ooapi.com:4873/md5/-/md5-2.2.1.tgz#53ab38d5fe3c8891ba465329ea23fac0540126f9"
+  dependencies:
+    charenc "~0.0.1"
+    crypt "~0.0.1"
+    is-buffer "~1.1.1"
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "http://npm.ooapi.com:4873/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -2176,7 +2233,7 @@ mimic-fn@^2.0.0:
   version "2.0.0"
   resolved "http://npm.ooapi.com:4873/mimic-fn/-/mimic-fn-2.0.0.tgz#0913ff0b121db44ef5848242c38bbb35d44cabde"
 
-minimatch@^3.0.3, minimatch@^3.0.4:
+minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "http://npm.ooapi.com:4873/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
@@ -2858,7 +2915,7 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@^0.5.6:
+source-map-support@^0.5.11, source-map-support@^0.5.6:
   version "0.5.11"
   resolved "http://npm.ooapi.com:4873/source-map-support/-/source-map-support-0.5.11.tgz#efac2ce0800355d026326a0ca23e162aeac9a4e2"
   dependencies:
@@ -3053,7 +3110,7 @@ test-exclude@^5.0.0:
     read-pkg-up "^4.0.0"
     require-main-filename "^2.0.0"
 
-throat@^4.0.0:
+throat@^4.0.0, throat@^4.1.0:
   version "4.1.0"
   resolved "http://npm.ooapi.com:4873/throat/-/throat-4.1.0.tgz#89037cbc92c56ab18926e6ba4cbb200e15672a6a"
 

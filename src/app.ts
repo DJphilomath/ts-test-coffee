@@ -1,5 +1,3 @@
-import { register } from "coffee-script";
-// register();
 import * as express from 'express';
 
 const app: express.Application = express();
